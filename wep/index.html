@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peer Connection</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="videos" class="container">
+      <h2>Local Video</h2>
+      <video id="localVideo" autoplay muted playsinline></video>
+      <h2>Remote Video</h2>
+      <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+    <div id="screens" class="container">
+      <h2>Local Screen</h2>
+      <video id="localScreen" autoplay muted playsinline></video>
+      <h2>Remote Screen</h2>
+      <video id="remoteScreen" autoplay muted playsinline></video>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
